@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>JS Drum Kit</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+    <body>
+
+    <span class="text-place">
+        <p id="text">Appuyez sur une touche de votre clavier pour découvrir le son et l'hisoire qu'il raconte</p>
+    </span>
+
+    <div class="keys">  
+        <div data-key="83" class="key" style="background-image: url(img/Spoutnik.png);">
+            <kbd>S</kbd>
+            <span class="sound">Bip</span>
+        </div>
+
+        <div data-key="68" class="key" style="background-image: url(img/JFK.png);">
+            
+            <kbd>D</kbd>
+            <span class="sound">JFK</span>
+        </div>
+
+        <div data-key="70" class="key" style="background-image: url(img/Apollo8.png);">
+            
+            <kbd>F</kbd>
+            <span class="sound">Xmas</span>
+        </div>
+
+        <div data-key="71" class="key" style="background-image: url(img/Apollo11.png);">
+            
+            <kbd>G</kbd>
+            <span class="sound">Go!</span>
+        </div>
+
+        <div data-key="72" class="key" style="background-image: url(img/Moon.png);">
+            
+            <kbd>H</kbd>
+            <span class="sound">Land</span>
+        </div>
+
+        <div data-key="74" class="key" style="background-image: url(img/Neil.png);">
+            
+          <kbd>J</kbd>
+          <span class="sound">Step</span>
+        </div>
+
+        <div data-key="75" class="key" style="background-image: url(img/Apollo13.png);"> 
+          <kbd>K</kbd>
+          <span class="sound">Problem</span>
+        </div>
+        
+    </div>
+
+    <div id="slidecontainer">
+        <div>
+            <input type="range" min="1" max="100" value="100" class="slider" id="myRange">
+        </div>
+        <div>
+            <span class="sound-level" id="lvl">Sound level : 100%</span>
+        </div>
+        <div><p class="text-place" id="stop">Appuyez sur espace pour éteindre les sons</p></div>
+    </div>
+
+  <audio data-key="83" src="sounds/1.mp3">Spoutnik 1, lancé le 4 octobre 1957 par l'URSS, est le premier engin placé en orbite autour de la Terre et marque le début de l'ère spatiale. Le "Bip-Bip" est le signal qui marque la première victorie spatiale de L'URSS sur les USA.</audio>
+  <audio data-key="68" src="sounds/2.m4r">"We choose to go to the Moon", un discours du président des États-Unis John Fitzgerald Kennedy prononcé le 12 septembre 1962, dans lequel il promet de voir un Américain poser le pied sur la Lune avant la fin des années 1960.</audio>
+  <audio data-key="70" src="sounds/3.mp3">Lors de la mission Apollo 8 (du 21 au 27 décembre 1968) qui fû la première à envoyer des hommes en orbite autour de la lune, l'équipage a célébré Noël à 384.400Km de la terre et à souhaité un "Merry Christmas" à tous les humains restés sur la Terre.</audio>
+  <audio data-key="71" src="sounds/4.mp3">Le 16 juillet 1969 à 9 h 32 heure locale le lanceur Saturn V décolle du complexe de lancement 39 de Cap Canaveral. Cet événement suivi par plusieurs millions de personnes est le début de la mission qui va envoyer des hommes sur la Lune et les ramener sur Terre.</audio>
+  <audio data-key="72" src="sounds/5.mp3">Lors de l'alunissage, les premiers mots d'Armstrong destinés au contrôle de la mission sont : « Houston, ici la base de la Tranquillité. L'Aigle a aluni »</audio>
+  <audio data-key="74" src="sounds/6.m4r">Neil Armstrong effectue ses premiers pas sur la Lune le 21 juillet 1969, devant des millions de téléspectateurs le regardant. Celui-ci, en posant le pied sur le sol lunaire, lance son message resté célèbre : « That's one small step for man, one giant leap for mankind »</audio>
+  <audio data-key="75" src="sounds/7.mp3">Apès l'explosion à bord d'Apollo 13 Jim Lovell le commandant de la mission dit cette phrase qui lance instantément la mise en marche d'une opération sauvetage jamais réalisée jusque là et qui sera un succès car les 3 hommes à bord du vaiseau reviendrons tous en vie</audio>
+
+<script src="app.js"></script>
+
+
+</body>
+</html>
